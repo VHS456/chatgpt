@@ -5,7 +5,7 @@ import os
 openai.api_base = "https://api.nova-oss.com/v1"
 openai.api_key = "your API key"
 
-messages = [{"role": "Teacher", "content": "I Will help you in education"}] 
+messages = [{"role": "System", "content": "I Will help you in education"}] 
 
 def CustomChatGPT(user_input):
     messages.append({"role": "user", "content": user_input})
